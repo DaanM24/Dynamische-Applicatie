@@ -34,7 +34,6 @@ hr{
     padding-left: 22%;
     padding-right: 22%;
     font-size: 2em;
-    text-align: center;
     margin-bottom: 1%;
     background-color: white;
     font-weight: bold;
@@ -50,6 +49,7 @@ hr{
     padding-bottom: 1%;
     padding-left: 22%;
     padding-right: 22%;
+    margin-top: 1%;
     font-size: 20px;
     text-align: center;
 }
@@ -59,20 +59,27 @@ hr{
 }
 
 header a{
-    position: absolute;
-    top: 5%;
-    right: 12.5%;
     text-decoration: none;
     color: black;
+}
+
+#text{
+    margin: 0 auto;
+}
+
+#charTitle{
+    padding: 2%;
+    font-size: 2em;
+    margin-bottom: 1%;
+    background-color: white;
+    font-weight: bold;
 }
 
 #charStats{
     border: black 2px solid;
     width: 300px;
 }
-.itemTile{
-    font-size: 1.1em;
-}
+
 #bio{
     display: inline-block;
     width: 60%;

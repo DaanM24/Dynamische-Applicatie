@@ -43,7 +43,7 @@ $password = "mysql";
         }
         ?>
         </div>
-        <div id='footer'>© Daan Masson 2020</div>
+        <?php include "includes/footer.php";?>
     </div>
 </body>
 </html>

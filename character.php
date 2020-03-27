@@ -26,17 +26,20 @@
         $stmt->execute([$id]);
         $char = $stmt->fetch();
         ?>
-    <header>
-        <h1><?="$char[1]"?></h1>
-        <a href="index.php">Terug</a>
-    </header>
-    <div id="center-div" style="padding-bottom: 1%;">
-    <?php
-        echo "<img src='images/$char[2]' alt='No Image found'>";
-        echo "<div id='bio'>".nl2br($char['4'])."</div>";
-        echo "<div id='charStats' style='background-color: $char[5];'<b>$char[3]</b><br> $char[6]<br> $char[7]<br><br> ";
-        if($char[8] != null){echo "<b class='itemTile'>Weapon: </b>$char[8]";}
-        if($char[9] != null){echo "<br><b class='itemTile'>Armor: </b>$char[9]";};?>
-    </div></div>
+    <div id='mainbody'>
+        <div id='charTitle'>
+            <h1 id='text'><?="$char[1]"?></h1>
+            <a href="index.php">Terug</a>
+        </div>
+        <div id="body" style="padding: 1%;">
+        <?php
+            echo "<img src='images/$char[2]' alt='No Image found'>";
+            echo "<div id='bio'>".nl2br($char['4'])."</div>";
+            echo "<div id='charStats' style='background-color: $char[5];'<b>Health: $char[3]</b><br>Attack: $char[6]<br>Defense: $char[7]<br><br> ";
+            if($char[8] != null){echo "<b class='itemTile'>Weapon: </b>$char[8]";}
+            if($char[9] != null){echo "<br><b class='itemTile'>Armor: </b>$char[9]";};?>
+        </div></div>
+        <?php include "includes/footer.php";?>
+    </div>
 </body>
 </html>

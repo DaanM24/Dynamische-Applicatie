@@ -1,0 +1,1 @@
+<div id='footer'>© Daan Masson 2020</div>
